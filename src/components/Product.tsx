@@ -9,7 +9,7 @@ export default function Product() {
     <div className="product-container">
       <figure className="image-container">
         <img src="https://wallpaperaccess.com/full/1354642.jpg" alt="Voiture" />
-        <div className="back-button" onClick={() => navigate("/productDesc")}>
+        <div className="back-button" onClick={() => navigate("/product/1")}>
           <span className="material-symbols-rounded">arrow_back_ios</span>
         </div>
         <div

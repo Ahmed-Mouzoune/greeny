@@ -8,6 +8,7 @@ import CalendarLayout from "./components/CalendarLayout"
 import ProductSerp from "./components/ProductSerp"
 import Product from "./components/Product"
 import ConfirmationReservation from "./components/ConfirmationReservation"
+import MapPage from "./pages/Map"
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
@@ -18,6 +19,7 @@ root.render(
         <Route path="calendar" element={<ProductLayout />}>
           <Route path=":idCalendar" element={<CalendarLayout />} />
         </Route>
+        <Route path="/map" element={<MapPage />} />
         <Route path="product" element={<ProductLayout />}>
           <Route path=":idProduit" element={<ProductSerp />} />
         </Route>

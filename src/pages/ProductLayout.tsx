@@ -1,10 +1,8 @@
 import React from "react"
-import { Outlet } from "react-router-dom"
+import { Outlet, useNavigate } from "react-router-dom"
 
 export default function ProductLayout() {
-
-
-
+  const navigate = useNavigate()
 
   return (
     <>
@@ -24,7 +22,7 @@ export default function ProductLayout() {
               account_circle
             </span>
           </div>
-          <h1>{`< Modèles disponibles`}</h1>
+          <h1 onClick={() => navigate("/map")}>{`< Modèles disponibles`}</h1>
           <br />
           <p>
             <span

@@ -3,7 +3,7 @@ import IntroHome from "../components/IntroHome"
 
 import Map, { Marker, Popup } from "react-map-gl"
 import markerVoiture from "../assets/img/markerVoiture.webp"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 const mapboxgl = require("mapbox-gl")
 mapboxgl.accessToken =
   "pk.eyJ1IjoibGVkYXNhNzMyNCIsImEiOiJjbDUwaHNtMm4wNjF2M2RwZG1oNHFwZTJ0In0.ljLu9iA-_khE5I1fhedYfA"
