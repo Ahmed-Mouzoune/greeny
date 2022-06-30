@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/greeny/static/css/main.edbaf97b.css",
+    "main.js": "/greeny/static/js/main.05d4f42c.js",
+    "static/media/home_3.png": "/greeny/static/media/home_3.6a7bf48d506db6d7fecc.png",
+    "static/media/home_1.png": "/greeny/static/media/home_1.fc9c8938c99e5547cf3a.png",
+    "static/media/home_2.png": "/greeny/static/media/home_2.4b5e04cf136edd8eb89d.png",
+    "static/media/voiture_1.png": "/greeny/static/media/voiture_1.cdabd98ac4afdedd9eae.png",
+    "static/media/voiture_3.png": "/greeny/static/media/voiture_3.c14d50ee0ec54651575c.png",
+    "static/media/voiture_2.png": "/greeny/static/media/voiture_2.8280a6b524d928e6b141.png",
+    "static/media/markerVoiture.webp": "/greeny/static/media/markerVoiture.a7d4e68f4225488201ad.webp",
+    "index.html": "/greeny/index.html",
+    "main.edbaf97b.css.map": "/greeny/static/css/main.edbaf97b.css.map",
+    "main.05d4f42c.js.map": "/greeny/static/js/main.05d4f42c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edbaf97b.css",
+    "static/js/main.05d4f42c.js"
+  ]
+}
