@@ -1,14 +1,21 @@
-import React from "react"
+import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function Product() {
+  const navigate = useNavigate()
+  const [isFavorite, setIsFavorite] = useState(false)
+
   return (
     <div className="product-container">
       <figure className="image-container">
         <img src="https://wallpaperaccess.com/full/1354642.jpg" alt="Voiture" />
-        <div className="back-button">
+        <div className="back-button" onClick={() => navigate("/productDesc")}>
           <span className="material-symbols-rounded">arrow_back_ios</span>
         </div>
-        <div className="fav-button">
+        <div
+          onClick={() => setIsFavorite((prev) => !prev)}
+          className={isFavorite ? "fav-button active" : "fav-button"}
+        >
           <span className="material-symbols-rounded">favorite</span>
         </div>
         <div className="dot-container">
@@ -60,7 +67,12 @@ export default function Product() {
 
         <div className="product-reservation">
           <div className="product-price">44€/ jour</div>
-          <div className="product-price product-cta">Réserver maintenant</div>
+          <div
+            className="product-price product-cta"
+            onClick={() => navigate("/confirmation")}
+          >
+            Réserver maintenant
+          </div>
         </div>
       </div>
     </div>

@@ -3,22 +3,25 @@ import IntroHome from "../components/IntroHome"
 
 import Map, { Marker, Popup } from "react-map-gl"
 import markerVoiture from "../assets/img/markerVoiture.webp"
+import { useNavigate } from "react-router-dom"
 const mapboxgl = require("mapbox-gl")
 mapboxgl.accessToken =
   "pk.eyJ1IjoibGVkYXNhNzMyNCIsImEiOiJjbDUwaHNtMm4wNjF2M2RwZG1oNHFwZTJ0In0.ljLu9iA-_khE5I1fhedYfA"
 
 export default function Home() {
-  const [step, setStep] = useState(0);
-  const [title, setTitle] = useState("Où voulez vous louer ?");
-  const [lieu, setLieu] = useState("");
+  const [step, setStep] = useState(0)
+  const [title, setTitle] = useState("Où voulez vous louer ?")
+  const [lieu, setLieu] = useState("")
   const [lng, setLng] = useState(2.19)
   const [lat, setLat] = useState(48.52)
   const [zoom, setZoom] = useState(9)
   const [showPopup, setShowPopup] = React.useState(false)
+  const navigate = useNavigate()
+
   return (
     <>
       {step < 4 && <IntroHome step={step} setStep={setStep} />}
-      {step >= 4 && 
+      {step >= 4 && (
         <div className="home">
           <div className="container-header">
             <div className="navbar-btn">
@@ -40,7 +43,7 @@ export default function Home() {
             {lieu && `> à ${lieu}`}
           </div>
           <Map
-            onClick={() => setShowPopup(true)}
+            onClick={() => navigate("/calendar/1")}
             initialViewState={{
               longitude: lng,
               latitude: lat,
@@ -70,7 +73,7 @@ export default function Home() {
             )}
           </Map>
         </div>
-      }
+      )}
     </>
   )
 }

@@ -7,6 +7,7 @@ import Home from "./pages/Home"
 import CalendarLayout from "./components/CalendarLayout"
 import ProductSerp from "./components/ProductSerp"
 import Product from "./components/Product"
+import ConfirmationReservation from "./components/ConfirmationReservation"
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
@@ -21,6 +22,7 @@ root.render(
           <Route path=":idProduit" element={<ProductSerp />} />
         </Route>
         <Route path="productDesc" element={<Product />} />
+        <Route path="confirmation" element={<ConfirmationReservation />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
