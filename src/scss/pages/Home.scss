@@ -35,6 +35,15 @@
         border-top-left-radius: 44px;
         border-top-right-radius: 44px;
         background-color: $LIGHT;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        .space-calendar {
+            content: "";
+            width: 50px;
+            height: 60px;
+        }
     }
     .marker {
         background-image: url('https://previews.123rf.com/images/jpgon/jpgon1601/jpgon160100426/50282194-illustration-d-un-marqueur-de-carte-isol%C3%A9-avec-une-voiture.jpg');

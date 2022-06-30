@@ -1,0 +1,19 @@
+.home {
+    .container-products-serp {
+        height: 75%;
+        width: 100%;
+    
+        border-top-left-radius: 44px;
+        border-top-right-radius: 44px;
+        background-color: $LIGHT;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        .container-header-serp {
+            height: 50px;
+            color: $PRIMARY;
+            padding: 20px 44px;
+        }
+    }   
+}
+
