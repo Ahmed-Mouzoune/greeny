@@ -1,0 +1,58 @@
+.home {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: $PRIMARY;
+    .container-header {
+        height: 25%;
+        width: 100%;
+        
+        text-align: center;
+        color: $LIGHT;
+
+        h1 {font-weight: bold;font-size: 24px;}
+        p{font-weight: 400;font-size: 14px;}
+        .navbar-btn {
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    .container-map {
+        height: 75%;
+        width: 100%;
+    
+        border-top-left-radius: 44px;
+        border-top-right-radius: 44px;
+        background-color: $LIGHT;
+    }
+    .container-products {
+        height: 75%;
+        width: 100%;
+    
+        border-top-left-radius: 44px;
+        border-top-right-radius: 44px;
+        background-color: $LIGHT;
+    }
+    .marker {
+        background-image: url('https://previews.123rf.com/images/jpgon/jpgon1601/jpgon160100426/50282194-illustration-d-un-marqueur-de-carte-isol%C3%A9-avec-une-voiture.jpg');
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+
+.product {
+    .container-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding-left: 30px;
+        text-align: left;
+        .navbar-btn { display: none;}
+    }
+}

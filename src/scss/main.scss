@@ -1,0 +1,15 @@
+// Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+// Imports icons
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+// Imports library
+@import url('mapbox-gl/dist/mapbox-gl.css');
+//general conf and vars
+@import "./_conf";
+@import "./global";
+
+//components
+@import "./components/IntroHome.scss";
+@import "./components/Map.scss";
+//pages
+@import "./pages/Home.scss";

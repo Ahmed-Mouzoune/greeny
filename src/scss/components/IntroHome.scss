@@ -1,0 +1,84 @@
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #385B3E;
+    font-weight: 900;
+    font-size: 27px;
+    color: #ffffff;
+}
+
+.introPopin {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: $LIGHT;
+
+    h1 {
+        font-size: 23px;
+        font-weight: bold;
+        color: $PRIMARY;
+    }
+    p {
+        font-weight: 700;
+        font-size: 19px;
+        color: $GREEN;
+    }
+    .header {
+        min-height: 30vh;
+        width: calc( 100% - 40px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .body {
+        min-height: 30vh;
+        width: calc( 100% - 40px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer {
+        min-height: 30vh;
+        width: calc( 100% - 40px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        .stateStep {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90px;
+            .indicateur {
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                background-color: $SECONDARY;
+            }
+            .active {background-color: $PRIMARY !important;}
+        }
+    }
+    .btn-cta {
+        width: 229px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: $GREEN;
+        color: $LIGHT;
+        border-radius: 29px;
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 112.5%;
+    }
+}
