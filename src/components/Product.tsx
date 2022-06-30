@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import corsa from "../assets/img/corsa.png"
 
 export default function Product() {
   const navigate = useNavigate()
@@ -8,7 +9,8 @@ export default function Product() {
   return (
     <div className="product-container">
       <figure className="image-container">
-        <img src="https://wallpaperaccess.com/full/1354642.jpg" alt="Voiture" />
+        <img src={corsa} alt="Voiture" />
+        {/* <img src="https://wallpaperaccess.com/full/1354642.jpg" alt="Voiture" /> */}
         <div className="back-button" onClick={() => navigate("/product/1")}>
           <span className="material-symbols-rounded">arrow_back_ios</span>
         </div>
