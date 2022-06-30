@@ -13,7 +13,7 @@ export default function Home() {
   const [title, setTitle] = useState("Où voulez vous louer ?")
   const [lieu, setLieu] = useState("")
   const [lng, setLng] = useState(2.19)
-  const [lat, setLat] = useState(48.52)
+  const [lat, setLat] = useState(48.9)
   const [zoom, setZoom] = useState(9)
   const [showPopup, setShowPopup] = React.useState(false)
   const navigate = useNavigate()
@@ -45,8 +45,8 @@ export default function Home() {
           <Map
             onClick={() => navigate("/calendar/1")}
             initialViewState={{
-              longitude: lng,
-              latitude: lat,
+              longitude: 2.39,
+              latitude: 48.7,
               zoom: zoom,
             }}
             style={{
@@ -59,6 +59,15 @@ export default function Home() {
             mapStyle="mapbox://styles/mapbox/streets-v9"
           >
             <Marker longitude={lng} latitude={lat} anchor="bottom">
+              <img src={markerVoiture} width={70} />
+            </Marker>
+            <Marker longitude={2.39} latitude={48.9} anchor="bottom">
+              <img src={markerVoiture} width={70} />
+            </Marker>
+            <Marker longitude={2.39} latitude={48.7} anchor="bottom">
+              <img src={markerVoiture} width={70} />
+            </Marker>
+            <Marker longitude={2.29} latitude={48.6} anchor="bottom">
               <img src={markerVoiture} width={70} />
             </Marker>
             {showPopup && (
