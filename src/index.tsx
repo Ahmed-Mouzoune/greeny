@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./scss/main.scss"
-import Product from "./pages/Product"
+import ProductLayout from "./pages/ProductLayout"
 import Home from "./pages/Home"
 import CalendarLayout from "./components/CalendarLayout"
 import ProductSerp from "./components/ProductSerp"
@@ -14,10 +14,10 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />}> 
         </Route>
-        <Route path="calendar" element={<Product />}> 
+        <Route path="calendar" element={<ProductLayout />}> 
           <Route path=":idCalendar" element={<CalendarLayout />} /> 
         </Route> 
-        <Route path="product" element={<Product />}>
+        <Route path="product" element={<ProductLayout />}>
           <Route path=":idProduit" element={<ProductSerp />} /> 
         </Route> 
       </Routes>
