@@ -10,9 +10,69 @@
         flex-direction: column;
         justify-content: start;
         .container-header-serp {
-            height: 50px;
+            height: 70px;
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
             color: $PRIMARY;
-            padding: 20px 44px;
+            padding: 10px 44px;
+            overflow: hidden;
+            .option {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: min-content;
+                
+                border-radius: 35px;
+                padding: 10px;
+                
+                &:first-child {
+                    background: $PRIMARY;
+                    color: $LIGHT;
+                }
+                &:last-child { opacity: 40%;}
+            }
+            .delimitation {
+                content: "";
+                width: 300px; height: 5px; background-color:  $SECONDARY;
+            }
+        }
+        .card-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #000;
+            .lieu{color: $GREEN;}
+        }
+        .card-body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .voiture {
+                display: flex;
+                width: 330px;
+                height: 110px;
+                border-radius: 15px;
+                background: rgba(160, 184, 203, 0.37);
+                margin-bottom: 30px;
+                .voiture-text {
+                    padding-top: 15px;
+                    padding-left: 30px;
+                    font-weight: bold;
+                    .description {font-size: 12px; font-weight: normal;}
+                }
+                .voiture-img {
+                    width: 250px;
+                    // img {
+                    //     width: 230px;
+                    // }
+                }
+            }
         }
     }   
 }
